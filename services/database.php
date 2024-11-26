@@ -7,9 +7,9 @@
 </head>
 <body>
     <?php
-    $conn = new mysqli("localhost", "root", "", "prak3")
-    if ($conn_>connection_error) {
-        die("koneksi gagal:" . conn->connection_error);
+    $conn = new mysqli("localhost", "root", "", "crud_db");
+    if ($conn->connect_error) {
+        die("koneksi gagal:" . $conn->connect_error);
     }
 
     ?>
